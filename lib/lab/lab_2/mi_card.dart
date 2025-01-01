@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:multiplatform_vku/lab/lab_3/dicee.dart';
 import '../../utils/constants/image_strings.dart';
 import '../../widgets/card.dart';
+import 'package:get/get.dart';
 
 class MiCard extends StatelessWidget {
   const MiCard({super.key});
@@ -9,7 +11,12 @@ class MiCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Mi Card',style: Theme.of(context).textTheme.labelLarge)),
+      appBar: AppBar(
+        title: Text(
+          'Mi Card',
+          style: Theme.of(context).textTheme.labelLarge,
+        ),
+      ),
       backgroundColor: Colors.teal,
       body: Center(
         child: SafeArea(
@@ -46,6 +53,17 @@ class MiCard extends StatelessWidget {
               ),
               const CardWidgets(text: '0922815775', icon: Icons.phone),
               const CardWidgets(text: 'photh.21it@vku.udn.vn', icon: Icons.mail),
+              const SizedBox(height: 50),
+              TextButton(
+                onPressed: () => Get.to(() => DicePage()),
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.redAccent,
+                ),
+                child: const Text(
+                  'Lab 3',
+                  style: TextStyle(fontSize: 18),
+                ),
+              ),
             ],
           ),
         ),
