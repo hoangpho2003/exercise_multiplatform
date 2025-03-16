@@ -1,7 +1,11 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:multiplatform_vku/lab/lab_5/xylophone.dart';
 
 class BallPage extends StatelessWidget {
+  const BallPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,7 +14,23 @@ class BallPage extends StatelessWidget {
         backgroundColor: Colors.green[600],
         title: const Text('GeeksforGeeks'),
       ),
-      body: const Ball(),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Ball(),
+          const SizedBox(height: 20),
+          TextButton(
+            onPressed: () => Get.to(() => const XylophoneApp()),
+            style: TextButton.styleFrom(
+              foregroundColor: Colors.redAccent,
+            ),
+            child: const Text(
+              'Lab 5',
+              style: TextStyle(fontSize: 18),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

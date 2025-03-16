@@ -1,0 +1,18 @@
+[
+  {
+    "question": "Flutter is developed by Google.",
+    "answer": true
+  },
+  {
+    "question": "Dart is a programming language used for Flutter.",
+    "answer": true
+  },
+  {
+    "question": "Flutter can only be used for Android apps.",
+    "answer": false
+  },
+  {
+    "question": "StatelessWidget can change state dynamically.",
+    "answer": false
+  }
+]

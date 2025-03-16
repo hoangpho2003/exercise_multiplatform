@@ -44,7 +44,7 @@ class DicePage extends StatelessWidget {
             ),
             const SizedBox(height: 50),
             TextButton(
-              onPressed: () => Get.to(() => BallPage()),
+              onPressed: () => Get.to(() => const BallPage()),
               style: TextButton.styleFrom(
                 foregroundColor: Colors.redAccent,
               ),

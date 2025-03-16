@@ -13,6 +13,10 @@ dependencies:
   get: ^4.6.5
   google_fonts: ^6.2.1
   cupertino_icons: ^1.0.8
+  audioplayers: ^5.2.1
+  flutter_spinkit: ^5.2.0
+  geolocator: ^10.1.0
+  font_awesome_flutter: ^10.6.0
 
 dev_dependencies:
   flutter_test:
@@ -26,3 +30,5 @@ flutter:
     - assets/images/
     - assets/images/dices/
     - assets/images/balls/
+    - assets/xylophone/
+    - assets/quizzler/
